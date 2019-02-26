@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.79.242.85:3306/userinfo?characterEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  freemarker:
+    enabled: true
+    cache: false
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
+    settings:
+      number_format: '0.##'
+  mvc:
+    favicon:
+      enabled: false
+
+mybatis:
+  type-aliases-package: com.example.review.bean
+  mapper-locations: com/example/test/dao/*.xml
+
